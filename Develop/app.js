@@ -77,11 +77,11 @@ const results = async () => {
     let constructed = employees.map(value => {
 
         switch (value.role) {
-            case 'Intern': return new Intern(value.name, value.role, value.email, value.id, value.school)
+            case 'Intern': return new Intern(value.name, value.id,value.email, value.school)
                 break;
-            case 'Engineer': return new Engineer(value.name, value.role, value.email, value.id, value.github)
+            case 'Engineer': return new Engineer(value.name, value.id, value.email, value.github)
                 break;
-            case 'Manager': return new Manager(value.name, value.role, value.email, value.id, value.officeNumber)
+            case 'Manager': return new Manager(value.name, value.id,  value.email, value.officeNumber)
         }
     })
 
