@@ -1,0 +1,22 @@
+#header{
+    color: darkblue;
+}
+#full{
+    background-color: coral;
+    color: cyan;
+}
+
+.card-header{
+    color: darkblue;
+    padding: 10px;
+}
+.card-body{
+    padding: 20px;
+}
+
+body{
+    background-color: coral;
+}
+.employee-card{
+    margin: 10px;
+}

@@ -67,7 +67,7 @@ const buildTeam = async (employees = []) =>{
     // referenced matthayden09
     const { addAnother, ...answers } = await inquirer.prompt(prompts);
     const newEmployees = [...employees, answers];
-    return addAnother ? employeeData(newEmployees) : newEmployees;
+    return addAnother ? buildTeam(newEmployees) : newEmployees;
 };
 
 const results = async () => {
